@@ -1,0 +1,9 @@
+.page-header
+  h1 イベント一覧
+
+.list-group
+  - @events.each do |event|
+    = link_to event_path(event), class: 'list-group-item'
+      h4.list-group-item-heading
+        = event.name
+      p.list-group-item-text "#{event.start_time.strftime('%Y/%m/%d %H:%M')} - #{event.end_time.strftime('%Y/%m/%d %H:%M')}"
