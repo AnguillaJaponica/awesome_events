@@ -19,6 +19,8 @@ html
           = link_to 'AwesomeEvents', root_path, class: 'navbar-brand'
         .collapse.navbar-collapse id='#bas-example-navbar-collapse-1'
           ul.nav.navbar-nav.navbar-right
+            li
+              = link_to 'イベントを作る', new_event_path
             - if logged_in?
               li
                 = link_to 'ログアウト', logout_path
@@ -28,5 +30,8 @@ html
       - if flash[:notice]
         .alert.alert-success
           = flash[:notice]
+      - if flash[:alert]
+        .alert.alert-danger
+          = flash[:alert]
     .container
       = yield
