@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title AwesomeEvents
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tags
+
+  body
+    .header.navbar.navbar-default role='navigation'
+      .container
+        .navbar-header
+          button.navbar-toggle data-toggle='collapse' data-target='#bas-example-navbar-collapse-1'
+            .sr-only Toggle Navigation
+            .icon-bar
+            .icon-bar
+            .icon-bar
+          = link_to 'AwesomeEvents', root_path, class: 'navbar-brand'
+        .collapse.navbar-collapse id='#bas-example-navbar-collapse-1'
+          ul.nav.navbar-nav.navbar-right
+            li
+              = link_to 'Twitterでログイン', '/auth/twitter'
+      - if flash[:notice]
+        .alert.alert-success
+          = flash[:notice]
+    .container
+      = yield

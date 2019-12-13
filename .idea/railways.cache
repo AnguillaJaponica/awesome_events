@@ -1,0 +1,4 @@
+W, [2019-12-11T20:16:31.709262 #65499]  WARN -- : You are setting a key that conflicts with a built-in method OmniAuth::AuthHash::InfoHash#name defined at /Users/taka.terumasa/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.2.2/lib/omniauth/auth_hash.rb:34. This can cause unexpected behavior when accessing the key as a property. You can still access the key via the #[] method.
+       Prefix Verb URI Pattern              Controller#Action
+welcome_index GET  /welcome/index(.:format) welcome#index
+         root GET  /                        welcome#index
