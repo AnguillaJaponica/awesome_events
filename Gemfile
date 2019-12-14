@@ -44,5 +44,8 @@ group :development, :test do
   gem 'slim'
   gem 'omniauth', '~> 1.2.1'
   gem 'omniauth-twitter', '~> 1.0.1'
+  gem 'kaminari'
+  gem 'kaminari-bootstrap'
+  gem 'ransack'
 end
 

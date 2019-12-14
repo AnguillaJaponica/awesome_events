@@ -1,4 +1,39 @@
-W, [2019-12-11T20:16:31.709262 #65499]  WARN -- : You are setting a key that conflicts with a built-in method OmniAuth::AuthHash::InfoHash#name defined at /Users/taka.terumasa/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.2.2/lib/omniauth/auth_hash.rb:34. This can cause unexpected behavior when accessing the key as a property. You can still access the key via the #[] method.
-       Prefix Verb URI Pattern              Controller#Action
-welcome_index GET  /welcome/index(.:format) welcome#index
-         root GET  /                        welcome#index
+W, [2019-12-14T13:03:42.040674 #2123]  WARN -- : You are setting a key that conflicts with a built-in method OmniAuth::AuthHash::InfoHash#name defined at /Users/taka.terumasa/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.2.2/lib/omniauth/auth_hash.rb:34. This can cause unexpected behavior when accessing the key as a property. You can still access the key via the #[] method.
+           Prefix Verb   URI Pattern                                  Controller#Action
+           events GET    /events(.:format)                            events#index
+                  POST   /events(.:format)                            events#create
+        new_event GET    /events/new(.:format)                        events#new
+       edit_event GET    /events/:id/edit(.:format)                   events#edit
+            event GET    /events/:id(.:format)                        events#show
+                  PATCH  /events/:id(.:format)                        events#update
+                  PUT    /events/:id(.:format)                        events#update
+                  DELETE /events/:id(.:format)                        events#destroy
+    welcome_index GET    /welcome/index(.:format)                     welcome#index
+             root GET    /                                            welcome#index
+                  GET    /auth/:provider/callback(.:format)           sessions#create
+           logout GET    /logout(.:format)                            sessions#destroy
+    event_tickets GET    /events/:event_id/tickets(.:format)          tickets#index
+                  POST   /events/:event_id/tickets(.:format)          tickets#create
+ new_event_ticket GET    /events/:event_id/tickets/new(.:format)      tickets#new
+edit_event_ticket GET    /events/:event_id/tickets/:id/edit(.:format) tickets#edit
+     event_ticket GET    /events/:event_id/tickets/:id(.:format)      tickets#show
+                  PATCH  /events/:event_id/tickets/:id(.:format)      tickets#update
+                  PUT    /events/:event_id/tickets/:id(.:format)      tickets#update
+                  DELETE /events/:event_id/tickets/:id(.:format)      tickets#destroy
+                  GET    /events(.:format)                            events#index
+                  POST   /events(.:format)                            events#create
+                  GET    /events/new(.:format)                        events#new
+                  GET    /events/:id/edit(.:format)                   events#edit
+                  GET    /events/:id(.:format)                        events#show
+                  PATCH  /events/:id(.:format)                        events#update
+                  PUT    /events/:id(.:format)                        events#update
+                  DELETE /events/:id(.:format)                        events#destroy
+      user_retire GET    /user/:user_id/retire(.:format)              user#retire
+       user_index GET    /user(.:format)                              user#index
+                  POST   /user(.:format)                              user#create
+         new_user GET    /user/new(.:format)                          user#new
+        edit_user GET    /user/:id/edit(.:format)                     user#edit
+             user GET    /user/:id(.:format)                          user#show
+                  PATCH  /user/:id(.:format)                          user#update
+                  PUT    /user/:id(.:format)                          user#update
+                  DELETE /user/:id(.:format)                          user#destroy
