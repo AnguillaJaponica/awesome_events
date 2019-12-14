@@ -47,5 +47,7 @@ group :development, :test do
   gem 'kaminari'
   gem 'kaminari-bootstrap'
   gem 'ransack'
+  gem 'carrierwave'
+  gem 'mini_magick'
 end
 
