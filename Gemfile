@@ -50,6 +50,7 @@ group :development, :test do
   gem 'mini_magick'
   gem 'rspec-rails'
   gem 'web-console', '~> 2.0'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 group :test do
