@@ -45,7 +45,7 @@ group :development, :test do
   gem 'omniauth-twitter', '~> 1.0.1'
   gem 'kaminari'
   gem 'kaminari-bootstrap'
-  gem 'ransack'
+  gem "ransack", '~> 1.2.2'
   gem 'carrierwave'
   gem 'mini_magick'
   gem 'rspec-rails'
@@ -58,5 +58,7 @@ group :test do
   gem 'capybara', '~> 2.2.1'
   gem 'poltergeist', '~> 1.5.0'
   gem 'database_cleaner', '~> 1.2.0'
+  gem 'phantomjs'
+  gem 'arel'
 end
 

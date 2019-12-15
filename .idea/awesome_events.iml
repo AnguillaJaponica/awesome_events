@@ -81,6 +81,7 @@
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v1.2.2, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth (v1.1.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-twitter (v1.0.1, rbenv: 2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="phantomjs (v2.1.1.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="poltergeist (v1.5.1, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyamorous (v1.0.0, rbenv: 2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.11, rbenv: 2.3.0) [gem]" level="application" />

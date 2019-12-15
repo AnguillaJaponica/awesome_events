@@ -20,4 +20,4 @@
 .env
 config/secrets.yml
 
-/.idea/
+/.idea
