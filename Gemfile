@@ -62,3 +62,8 @@ group :test do
   gem 'arel'
 end
 
+group :staging, :production do
+  gem 'unicorn'
+  gem 'web-console', '~> 2.0'
+  gem 'omniauth-twitter', '~> 1.0.1'
+end
